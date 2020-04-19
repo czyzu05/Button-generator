@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Button Generator</h1>
+
+        <div class="properties">
+            <form action="#">
+                <input type="text" placeholder="Button Text" id="btnText">
+                <input type="text" placeholder="Background Color" id="bgColor">
+                <input type="text" placeholder="Text Color" id="txtColor">
+                <select name="textTransform" id="txtTransform">
+                    <option value="" disabled selected>Text Transform</option>
+                    <option value="uppercase">Uppercase</option>
+                    <option value="capitalize">Capitalize</option>
+                    <option value="lowercase">Lowercase</option>
+                </select>
+                <input type="number" class="left" placeholder="Top Padding" id="tPad">
+                <input type="number" class="right" placeholder="Right Padding" id="rPad">
+                <input type="number" class="left" placeholder="Bottom Padding" id="bPad">
+                <input type="number" class="right" placeholder="Left Padding" id="lPad">
+
+                <input type="number" class="left" placeholder="Top Left Radius" id="tlRad">
+                <input type="number" class="right" placeholder="Top Right Radius" id="trRad">
+                <input type="number" class="left" placeholder="Bottom Left Radius" id="blRad">
+                <input type="number" class="right" placeholder="Bottom Right Radius" id="brRad">
+                <label for="Border">Border</label>
+                <input type="radio" name="border" value="y">Yes
+                <input type="radio" name="border" value="n">No
+
+                <input type="text" placeholder="Border (2px solid red)" id="border">
+            </form>
+        </div>
+
+        <div class="buttons">
+            <div class="button">
+                <button id="btn">Dummy Text</button>
+            </div>
+            <a href="#" id="generateCode">generate code</a>
+        </div>
+
+        <div class="coding">
+            <div>
+                <h3 class="html">HTML</h3>
+                <div id="html-code"></div>
+            </div>
+
+            <h3 class="css">CSS</h3>
+            <div id="css-code"></div>
+
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
